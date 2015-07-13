@@ -10,6 +10,8 @@ function wpuf_buffer_start() {
     ob_start();
 }
 
+
+
 add_action( 'init', 'wpuf_buffer_start' );
 
 /**

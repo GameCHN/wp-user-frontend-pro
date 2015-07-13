@@ -247,6 +247,9 @@ class WPUF_Updates {
 
         $license = $this->get_license_key();
 
+        error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);
+
+
         $params = array(
             'timeout' => ( ( defined( 'DOING_CRON' ) && DOING_CRON ) ? 30 : 3 ),
             'user-agent' => 'WordPress/' . $wp_version . '; ' . home_url( '/' ),
