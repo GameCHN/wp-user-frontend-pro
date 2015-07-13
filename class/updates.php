@@ -264,7 +264,7 @@ class WPUF_Updates {
                 'locale' => $locale,
                 'mysql' => $mysql_version,
                 'blogs' => $num_blogs,
-                'users' => $user_count['total_users'],
+                'users' => isset($user_count['total_users']) ? $user_count['total_users'] : false,
                 'multisite_enabled' => $multisite_enabled,
                 'site_url' => $wp_install,
                 'license' => isset( $license['key'] ) ? $license['key'] : '',
