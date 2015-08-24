@@ -333,7 +333,7 @@ class WPUF_Admin_Form {
                 $guest = isset( $settings['guest_post'] ) ? $settings['guest_post'] : 'false';
                 $url = WPUF_ASSET_URI . '/images/';
                 $image = '<img src="%s" alt="%s">';
-                echo $settings['guest_post'] == 'false' ? sprintf( $image, $url . 'cross.png', __( 'No', 'wpuf' ) ) : sprintf( $image, $url . 'tick.png', __( 'Yes', 'wpuf' ) ) ;
+                echo $guest == 'false' ? sprintf( $image, $url . 'cross.png', __( 'No', 'wpuf' ) ) : sprintf( $image, $url . 'tick.png', __( 'Yes', 'wpuf' ) ) ;
                 break;
 
             default:
