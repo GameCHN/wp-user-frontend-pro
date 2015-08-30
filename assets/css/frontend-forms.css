@@ -824,3 +824,8 @@ table.wpuf-table td {
     width: 100%;
   }
 }
+
+.wpuf-fields[data-type="radio"] label {
+    /* min-width: 15%; */
+    display: inline-block;
+}

@@ -577,7 +577,7 @@ class WPUF_Render_Form {
                     <meta charset="UTF-8">
                     <title>Form Preview</title>
                     <link rel="stylesheet" href="<?php echo plugins_url( 'assets/css/frontend-forms.css', dirname( __FILE__ ) ); ?>">
-
+                    <script src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.js" type="text/javascript"></script>
                     <style type="text/css">
                         body {
                             margin: 0;
@@ -887,7 +887,7 @@ class WPUF_Render_Form {
      * @param array $attr
      * @param int|null $post_id
      */
-    function image_upload( $attr, $post_id, $type, $form_id ) {
+    function image_upload( $attr, $post_id, $type, $form_id = 'default' ) {
         $has_featured_image = false;
         $has_images = false;
         $has_avatar = false;
